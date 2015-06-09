@@ -10,7 +10,7 @@ include "admin/app/models/PersonData.php";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>.: HOSPITAL :.</title>
+  <title>.: SUGGBOX :.</title>
 
   <link rel="stylesheet" type="text/css" href="admin/res/bootstrap3/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="admin/res/font-awesome/css/font-awesome.min.css">
@@ -29,7 +29,7 @@ include "admin/app/models/PersonData.php";
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="./"><b>LEYVA</b></a>
+    <a class="navbar-brand" href="./"><b>SUGGBOX</b></a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->

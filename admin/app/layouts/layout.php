@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>.: HOSPITAL :.</title>
+  <title>.: SUGGBOX :.</title>
 
   <link rel="stylesheet" type="text/css" href="res/bootstrap3/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="res/font-awesome/css/font-awesome.min.css">
@@ -33,7 +33,7 @@ if(isset($_SESSION["admin_id"])):?>
       <ul class="sidebar">
         <li class="sidebar-main">
           <a href="#" ng-click="toggleSidebar()">
-            HOSPITAL
+            SUGGBOX
             <span class="menu-icon fa fa-align-justify"></span>
           </a>
         </li>
