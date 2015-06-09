@@ -1,5 +1,5 @@
-create database leyva;
-use leyva; 
+create database suggbox;
+use suggbox; 
 
 create table admin (
 	id int not null auto_increment primary key,
@@ -25,31 +25,6 @@ create table category (
 	name varchar(200) not null
 	);
 
-
-create table person (
-	id int not null auto_increment primary key,
-	image varchar(50),
-	no varchar(100) not null,
-	rfc varchar(50) not null,
-	name varchar(50) not null,
-	lastname varchar(50) not null,
-	job varchar(50) not null,
-	email1 varchar(255) not null,
-	email2 varchar(255) not null,
-	email3 varchar(255) not null,
-	address1 varchar(60) not null,
-	address2 varchar(60) not null,
-	phone1 varchar(60) not null,
-	phone2 varchar(60),
-	phone3 varchar(60),
-	is_active boolean not null default 1,
-	created_at datetime not null,
-	team_id int not null,
-	foreign key (team_id) references team(id),
-	category_id int not null,
-	foreign key (category_id) references category(id)
-);
-
 create table item (
 	id int not null auto_increment primary key,
 	fullname varchar(50) not null,
@@ -59,7 +34,7 @@ create table item (
 	msg varchar(255) not null,
 	is_readed boolean not null default 0,
 	created_at datetime not null,
-	person_id int ,
-	foreign key (person_id) references person(id)
+	team_id int ,
+	foreign key (team_id) references team(id)
 	);
 
