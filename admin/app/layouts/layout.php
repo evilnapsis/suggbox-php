@@ -16,7 +16,14 @@
   -->
 
   <script type="text/javascript" src="res/jquery.min.js"></script>
-  <script type="text/javascript" src="res/angular.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>  
+<link rel="stylesheet" href="res/morris/morris.css">
+  <link rel="stylesheet" href="res/morris/example.css">
+
+
+  <script type="text/javascript" src="res/jquery.min.js"></script>
   <script type="text/javascript" src="res/angular-cookies.js"></script>
   <script type="text/javascript" src="res/ng-bootstrap-tpls.min.js"></script>
   <script type="text/javascript" src="res/angular/bootstrap.js"></script>
@@ -113,11 +120,6 @@ Ingresar
 </div>
 
 <?php endif; ?>
-  <script src="js/datatables/jquery.dataTables.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/datatables/dataTables.bootstrap.js"></script>
-  <script>
-  $(".datatable").dataTable();
-  </script>
 </body>
 </html>

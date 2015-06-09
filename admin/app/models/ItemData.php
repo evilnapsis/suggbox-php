@@ -11,7 +11,7 @@ class ItemData {
 		$this->created_at = "NOW()";
 	}
 
-	public function getPerson(){ return PersonData::getById($this->person_id); }
+	public function getTeam(){ return TeamData::getById($this->team_id); }
 
 	public function add(){
 		$sql = "insert into user (fullname,phone,address,kind,person_id,msg,created_at) ";
@@ -39,6 +39,13 @@ class ItemData {
 		$query = Executor::doit($sql);
 		return Model::one($query[0],new ItemData());
 	}
+
+	public static function countAllFromDay($day){
+		$sql = "select count(*) as c from item where date(created_at)=\"$day\"";
+		$query = Executor::doit($sql);
+		return Model::one($query[0],new ItemData());
+	}
+
 
 	public static function getByMail($mail){
 		$sql = "select * from ".self::$tablename." where mail=\"$mail\"";

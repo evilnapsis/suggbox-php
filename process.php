@@ -11,7 +11,7 @@ include "admin/app/models/PersonData.php";
 		"phone"=>"\"$_POST[phone]\"",
 		"address"=>"\"$_POST[address]\"",
 		"kind"=>"\"$_POST[kind]\"",
-		"person_id"=>"\"$_POST[person_id]\"",
+		"team_id"=>"\"$_POST[team_id]\"",
 		"msg"=>"\"$_POST[msg]\"",
 		"created_at"=>"NOW()"
 		));

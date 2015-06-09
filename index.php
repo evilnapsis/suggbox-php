@@ -63,8 +63,8 @@ include "admin/app/models/PersonData.php";
         <div class="modal-body">
 <form class="form-horizontal" role="form" method="post" action="./process.php">
   <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Nombre</label>
-    <div class="col-lg-5">
+    <label for="inputEmail1" class="col-lg-3 control-label">Nombre</label>
+    <div class="col-lg-4">
       <input type="text" name="fullname" class="form-control" id="inputEmail1" placeholder="Nombre">
     </div>
     <label for="inputEmail1" class="col-lg-2 control-label">Tel.</label>
@@ -74,8 +74,8 @@ include "admin/app/models/PersonData.php";
   </div>
 
   <div class="form-group">
-    <label for="inputPassword1" class="col-lg-2 control-label">Domicilio</label>
-    <div class="col-lg-10">
+    <label for="inputPassword1" class="col-lg-3 control-label">Domicilio</label>
+    <div class="col-lg-9">
       <input type="text" name="address" class="form-control" id="inputPassword1" placeholder="Domicilio">
     </div>
   </div>
@@ -83,7 +83,7 @@ include "admin/app/models/PersonData.php";
 
 
   <div class="form-group">
-    <div class="col-lg-3 col-md-offset-2">
+    <div class="col-lg-3 col-md-offset-3">
 		<div class="radio">
 		  <label>
 		    <input type="radio" name="kind" value="1" required>
@@ -111,29 +111,25 @@ include "admin/app/models/PersonData.php";
 
   <?php $teams = TeamData::getAll();?>
   <div class="form-group">
-    <label for="inputPassword1" class="col-lg-2 control-label">Responsable</label>
-    <div class="col-lg-10">
-<select name="person_id" class="form-control" required="required">
-      <option value="">-- SELECCIONE RESPONSABLE --</option>
+    <label for="inputPassword1" class="col-lg-3 control-label">Departamento</label>
+    <div class="col-lg-9">
+<select name="team_id" class="form-control" required="required">
+      <option value="">-- SELECCIONE DEPARTAMENTO --</option>
       <?php foreach($teams as $team):?>
-        <optgroup label="<?php echo $team->name; ?>">
-      <?php foreach(PersonData::getAllBySucursalId($team->id) as $person):?>
-        <option value="<?php echo $person->id;?>"><?php echo $person->name." ".$person->lastname." (".$person->job.")";?></option>
-      <?php endforeach;?>
-		</optgroup>
+        <option value="<?php echo $team->id;?>"><?php echo $team->name;?></option>
       <?php endforeach;?>
     </select>
     </div>
   </div>
   <div class="form-group">
-    <label for="inputPassword1" class="col-lg-2 control-label">Expone</label>
-    <div class="col-lg-10">
-    <textarea name="msg" class="form-control" rows="3" placeholder="Expone" required></textarea>
+    <label for="inputPassword1" class="col-lg-3 control-label">Mensaje</label>
+    <div class="col-lg-9">
+    <textarea name="msg" class="form-control" rows="3" placeholder="Mensaje" required></textarea>
     </div>
   </div>
 
   <div class="form-group">
-    <div class="col-lg-offset-2 col-lg-10">
+    <div class="col-lg-offset-3 col-lg-9">
       <button type="submit" class="btn btn-default">Enviar mensaje</button>
     </div>
   </div>

@@ -24,13 +24,13 @@ $persons = ItemData::getAll();
                     <table class="table">
                     <thead>
                     <th></th>
-                      <th>Tipo</th>
+                      <th>Mensaje</th>
                       <th>Nombre</th>
+                      <th>Tipo</th>
                       <th>Direccion</th>
                       <th>Telefono</th>
-                      <th>Afectado</th>
-                      <th>Mensaje</th>
-                      <th></th>
+                      <th>Departamento</th>
+                      <th>Fecha</th>
                     </thead>
                       <tbody>
                       <?php foreach($persons as $autor):?>
@@ -38,6 +38,8 @@ $persons = ItemData::getAll();
                         <td style="width:30px;">
                         
                         </td>
+                        <td><?php echo $autor->msg; ?></td>
+                        <td><?php echo $autor->fullname; ?></td>
                         <td>
                         <?php
                         switch ($autor->kind) {
@@ -52,11 +54,10 @@ $persons = ItemData::getAll();
                         ?>
                         </td>
 
-                        <td><?php echo $autor->fullname; ?></td>
                         <td><?php echo $autor->address; ?></td>
                         <td><?php echo $autor->phone; ?></td>
-                        <td><?php echo $autor->getPerson()->name." ".$autor->getPerson()->lastname; ?></td>
-                        <td><?php echo $autor->msg; ?></td>
+                        <td><?php echo $autor->getTeam()->name; ?></td>
+                        <td><?php echo $autor->created_at;?></td>
                         </tr>
                       <?php endforeach; ?>
                       </tbody>
