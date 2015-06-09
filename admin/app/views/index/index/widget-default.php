@@ -8,9 +8,11 @@
 
           <div class="row">
             <div class="col-lg-12">
+                        <h1>Grafica de mensajes</h1>
+
               <div class="widget">
                 <div class="widget-title">
-                  <i class="fa fa-tasks"></i> Visitas (Utilmos 30 dias)
+                  <i class="fa fa-tasks"></i> Grafica de Mensajes (Utilmos 30 dias)
                 </div>
                 <div class="widget-body">
 <div id="graph" class="animate" data-animate="fadeInUp" ></div>

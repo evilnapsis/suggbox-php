@@ -17,8 +17,8 @@
 
   <script type="text/javascript" src="res/jquery.min.js"></script>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>  
+<script src="res/morris/raphael-min.js"></script>
+<script src="res/morris/morris.js"></script>  
 <link rel="stylesheet" href="res/morris/morris.css">
   <link rel="stylesheet" href="res/morris/example.css">
 
@@ -55,7 +55,10 @@ if(isset($_SESSION["admin_id"])):?>
         </li> -->
         <li class="sidebar-title separator"><span>Administracion</span></li>
         <li class="sidebar-list">
-          <a href="./index.php?r=index/units">Departamentos <span class="menu-icon fa fa-circle-o"></span></a>
+          <a href="./index.php?r=index/units">Departamentos <span class="menu-icon fa fa-th-list"></span></a>
+        </li>
+        <li class="sidebar-list">
+          <a href="./index.php?r=auth/logout">Salir <span class="menu-icon fa fa-remove"></span></a>
         </li>
       </ul>
 <!--
@@ -120,6 +123,6 @@ Ingresar
 </div>
 
 <?php endif; ?>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="res/bootstrap3/js/bootstrap.min.js"></script>
 </body>
 </html>
