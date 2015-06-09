@@ -43,21 +43,12 @@ if(isset($_SESSION["admin_id"])):?>
         <li class="sidebar-list">
           <a href="./?r=index/msgs">Mensajes <span class="menu-icon fa fa-envelope-o"></span></a>
         </li>
-        <li class="sidebar-list">
-          <a href="./?r=index/people">Personas <span class="menu-icon fa fa-th-large"></span></a>
-        </li>
 <!--        <li class="sidebar-list">
           <a href="./?r=team/index">Grupos <span class="menu-icon fa fa-th-large"></span></a>
         </li> -->
         <li class="sidebar-title separator"><span>Administracion</span></li>
         <li class="sidebar-list">
-          <a href="./index.php?r=index/units">Unidades Medica <span class="menu-icon fa fa-circle-o"></span></a>
-        </li>
-        <li class="sidebar-list">
-          <a href="./index.php?r=index/categories">Categorias <span class="menu-icon fa fa-th-list"></span></a>
-        </li>
-        <li class="sidebar-list">
-          <a href="./index.php?view=usuarios">Usuarios <span class="menu-icon fa fa-user"></span></a>
+          <a href="./index.php?r=index/units">Departamentos <span class="menu-icon fa fa-circle-o"></span></a>
         </li>
       </ul>
 <!--

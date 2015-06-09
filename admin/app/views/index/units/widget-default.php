@@ -11,14 +11,14 @@ $persons = TeamData::getAll();
 
           <div class="row">
             <div class="col-lg-12">
-<a href="./?r=team/new" class="btn btn-default pull-right">Agregar Unidad</a>
-            <h1>Unidades Medicas</h1>
+<a href="./?r=team/new" class="btn btn-default pull-right">Agregar Departamento</a>
+            <h1>Departamentos</h1>
 <?php if(count($persons)==0):?>
-  <p class="alert alert-danger">No hay Unidades Medicas</p>
+  <p class="alert alert-danger">No hay Departamentos</p>
 <?php endif; ?>
               <div class="widget">
                 <div class="widget-title">
-                  <i class="fa fa-th-list"></i> Unidades Medicas
+                  <i class="fa fa-th-list"></i> Departamentos
                 </div>
                 <div class="widget-body no-padding">
 

@@ -2,7 +2,7 @@
           <div class="col-xs-12">
             <div class="meta pull-left">
               <div class="page">
-                HOSPITAL
+                SUGGBOX
               </div>
               <div class="breadcrumb-links">
                 Administrador

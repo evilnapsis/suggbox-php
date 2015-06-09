@@ -7,10 +7,10 @@
 
           <div class="row">
             <div class="col-lg-12">
-            <h2>Nueva Unidad Medica</h2>
+            <h2>Nuevo Departamento</h2>
               <div class="widget">
                 <div class="widget-title">
-                  <i class="fa fa-male"></i> Unidad Medica
+                  <i class="fa fa-male"></i> Departamento
                 </div>
                 <div class="widget-body">
 <form class="form-horizontal" role="form" method="post" action="./?r=team/add">
@@ -22,7 +22,7 @@
   </div>
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
-      <button type="submit" class="btn btn-default">Agregar Unidad Medica</button>
+      <button type="submit" class="btn btn-default">Agregar Departamento</button>
     </div>
   </div>
 </form>

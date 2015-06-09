@@ -14,7 +14,7 @@ $sucursal = TeamData::getById($_GET["id"]);
             <h2><?php echo $sucursal->name;?></h2>
               <div class="widget">
                 <div class="widget-title">
-                  <i class="fa fa-male"></i> Unidad Medica
+                  <i class="fa fa-male"></i> Departamento
                 </div>
                 <div class="widget-body">
 <form class="form-horizontal" role="form" method="post" action="./?r=team/upd">
@@ -27,7 +27,7 @@ $sucursal = TeamData::getById($_GET["id"]);
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
     <input type="hidden" name="id" value="<?php echo $sucursal->id;?>">
-      <button type="submit" class="btn btn-default">Actualizar Unidad Medica</button>
+      <button type="submit" class="btn btn-default">Actualizar Departamento</button>
     </div>
   </div>
 </form>

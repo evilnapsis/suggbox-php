@@ -9,14 +9,13 @@ $persons = ItemData::getAll();
 
           <div class="row">
             <div class="col-lg-12">
-<a href="./?r=team/newclient" class="btn btn-default pull-right">Agregar Persona</a>
-            <h1>Personas</h1>
+            <h1>Mensajes</h1>
 <?php if(count($persons)==0):?>
-  <p class="alert alert-danger">No hay personas</p>
+  <p class="alert alert-danger">No hay Mensajes</p>
 <?php endif; ?>
               <div class="widget">
                 <div class="widget-title">
-                  <i class="fa fa-th-list"></i> Personas
+                  <i class="fa fa-th-list"></i> Mensajes
                 </div>
                 <div class="widget-body no-padding">
 
